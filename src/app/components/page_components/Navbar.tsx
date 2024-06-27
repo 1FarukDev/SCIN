@@ -47,23 +47,25 @@ const Navbar = () => {
         },
     ]
     return (
-        <main className='flex items-center justify-between container mx-auto py-5 bg-white'>
-            <div className='flex items-center justify-between gap-2'> 
-                <Image src={SINCLOGO} alt='SINC LOGO' />
-                <div className='flex items-center justify-between gap-4'>
-                    {headerMenu.map((menu: menuTypes, index: number) => {
-                        return (
-                            <ul key={index} className='cursor-pointer'>
-                                <li>{menu.name}</li>
-                            </ul>
-                        )
-                    })}
+        <main className=' bg-white'>
+            <section className='flex items-center justify-between container mx-auto py-5 bg-white'>
+                <div className='flex items-center justify-between gap-2'>
+                    <Image src={SINCLOGO} alt='SINC LOGO' />
+                    <div className='flex items-center justify-between gap-4'>
+                        {headerMenu.map((menu: menuTypes, index: number) => {
+                            return (
+                                <ul key={index} className='cursor-pointer'>
+                                    <li>{menu.name}</li>
+                                </ul>
+                            )
+                        })}
+                    </div>
                 </div>
-            </div>
-            <div className='flex gap-3'>
-                <ASButton name='SINC with us' className=' text-white bg-[#20888F] rounded-full py-4 px-6'/>
-                <ASButton name='APPLY to SIP 1.0' className=' text-white bg-[#303030] py-4 px-6 rounded-full'/>
-            </div>
+                <div className='flex gap-3'>
+                    <ASButton name='SINC with us' className=' text-white bg-[#20888F] rounded-full py-4 px-6' />
+                    <ASButton name='APPLY to SIP 1.0' className=' text-white bg-[#303030] py-4 px-6 rounded-full' />
+                </div>
+         </section>
         </main>
     )
 }

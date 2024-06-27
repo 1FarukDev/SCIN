@@ -14,8 +14,6 @@ const Hero = () => {
     }, []);
     const images = [
         'https://images.pexels.com/photos/276528/pexels-photo-276528.jpeg',
-        'https://images.pexels.com/photos/3027431/pexels-photo-3027431.jpeg',
-        'https://images.pexels.com/photos/262048/pexels-photo-262048.jpeg',
         'https://images.pexels.com/photos/2082091/pexels-photo-2082091.jpeg',
         'https://images.pexels.com/photos/2428271/pexels-photo-2428271.jpeg',
     ];
